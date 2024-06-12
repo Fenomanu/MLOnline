@@ -12,10 +12,11 @@ CORS(app, resources={r"/*": {"origins": "https://www.mdiazpastor.com"}})
 #CORS(app)
 
 employees = [
- { 'id': 1, 'name': 'Ashley' },
- { 'id': 2, 'name': 'Kate' },
- { 'id': 3, 'name': 'Joe' }
+    { 'id': 1, 'name': 'Ashley' },
+    { 'id': 2, 'name': 'Kate' },
+    { 'id': 3, 'name': 'Joe' }
 ]
+
 # Download and prepare the data
 data_root = "https://github.com/ageron/data/raw/main/"
 lifesat = pd.read_csv(data_root + "lifesat/lifesat.csv")
@@ -50,4 +51,4 @@ def predict(new_value):
     return jsonify(res), 200
 
 if __name__ == '__main__':
-   app.run(port=5000)
+   app.run()
