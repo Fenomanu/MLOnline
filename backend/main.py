@@ -53,7 +53,7 @@ def predict(new_value):
 @app.route('/echo/<new_value>', methods=['GET'])
 def predict(new_value):
     print(new_value)
-    return jsonify(new_value), 200
+    return new_value, 200
 
 if __name__ == '__main__':
    app.run()
