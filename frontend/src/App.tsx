@@ -39,7 +39,7 @@ function App() {
           Result is {result}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Welcome here!
         </p>
       </div>
       <p className="read-the-docs">
