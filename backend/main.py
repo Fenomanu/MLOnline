@@ -8,8 +8,8 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-#CORS(app, resources={r"/*": {"origins": "https://www.mdiazpastor.com"}})
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://www.mdiazpastor.com"}})
+#CORS(app)
 
 employees = [
  { 'id': 1, 'name': 'Ashley' },
