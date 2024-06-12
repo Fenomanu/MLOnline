@@ -8,7 +8,7 @@ function App() {
   const [inputValue, setInputValue] = useState(0.0)
   function fetchData(value:number) {
     console.log("Result")
-    fetch('http://localhost:5000/predict/' + String(value))
+    fetch('http://api.mdiazpastor.com/predict/' + String(value))
       .then(response => response.json())
       .then(json => setResult(json))
       .catch(error => console.error(error));
