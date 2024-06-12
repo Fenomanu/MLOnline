@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   const [result, setResult] = useState(0.0)
-  const [inputValue, setInputValue] = useState(0.0)
+  const [inputValue, setInputValue] = useState("")
   function fetchData(value:number) {
     console.log("Result")
     fetch('https://api.mdiazpastor.com/predict/' + String(value))
@@ -14,7 +14,7 @@ function App() {
       .catch(error => console.error(error));
   }
   const handleChange = (e:any) => {
-    setInputValue(e.target.value);
+    setInputValue(e.target.value)
   };
 
   return (
@@ -30,12 +30,12 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <input 
-          type="text" 
+          type="number" 
           value={inputValue} 
-          onChange={handleChange} 
+          onChange={handleChange}
           placeholder="Predict..."
         />
-        <button onClick={() => fetchData(inputValue)}>
+        <button onClick={() => fetchData(parseFloat(inputValue))}>
           Result is {result}
         </button>
         <p>
