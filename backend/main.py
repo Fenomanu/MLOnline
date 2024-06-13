@@ -51,7 +51,7 @@ def predict(new_value):
     return jsonify(res), 200
 
 @app.route('/echo/<new_value>', methods=['GET'])
-def predict(new_value):
+def echo(new_value):
     print(new_value)
     return new_value, 200
 
