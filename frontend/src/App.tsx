@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import reactLogo from './assets/gear.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -19,7 +18,6 @@ function App() {
   };
 
   return (
-    <>
     <div className='board'>
       <div>
         <a href="https://vitejs.dev" target="_blank">
@@ -29,7 +27,6 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
       <h1>Sitio en construcción</h1>
       <div className="card">
         <input 
@@ -38,11 +35,13 @@ function App() {
           onChange={handleChange}
           placeholder="Predict..."
         />
+<<<<<<< Updated upstream
         <button onClick={() => fetchData(parseFloat(inputValue))}>
           Result is {result}
         </button>
         <p>
           Welcome here!
+=======
         <button onClick={() => fetchData(inputValue)}>
           Enviar
         </button>
@@ -51,12 +50,12 @@ function App() {
         </p>
         <p>
           Pulsa enviar para una respuesta del backend
+>>>>>>> Stashed changes
         </p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
     </div>
   )
 }
