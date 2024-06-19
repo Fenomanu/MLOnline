@@ -35,14 +35,7 @@ function App() {
           onChange={handleChange}
           placeholder="Predict..."
         />
-<<<<<<< Updated upstream
         <button onClick={() => fetchData(parseFloat(inputValue))}>
-          Result is {result}
-        </button>
-        <p>
-          Welcome here!
-=======
-        <button onClick={() => fetchData(inputValue)}>
           Enviar
         </button>
         <p>
@@ -50,7 +43,6 @@ function App() {
         </p>
         <p>
           Pulsa enviar para una respuesta del backend
->>>>>>> Stashed changes
         </p>
       </div>
       <p className="read-the-docs">
