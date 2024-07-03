@@ -1,13 +1,8 @@
 import { useState } from 'react'
-import Header from './components/Header'
-import About from './components/About'
-import Experience from './components/Experience'
-import './App.css'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import SoftSkills from './components/SoftSkills'
+import reactLogo from './assets/gear.svg'
+import './AppOld.css'
 
-function App() {
+function AppOld() {
   const [result, setResult] = useState(0.0)
   const [inputValue, setInputValue] = useState("")
   function fetchData(value:number) {
@@ -22,22 +17,14 @@ function App() {
   };
 
   return (
-    <>
-      <Header>
-        <li><a href='#about'>About</a></li>
-        <li><a href='#experience'>Experience</a></li>
-        <li><a href='#projects'>Projects</a></li>
-        <li><a href='#skills'>Skills</a></li>
-      </Header>
-      
-      <About id="about"/>
-
-      <Experience id="experience"/>
-
-      <Projects id="projects"/>
-
-      <section hidden className="projects">
-        <h1></h1>
+    <div className='board'>
+      <div>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Sitio en construcción</h1>
+      <div className="card">
         <input 
           type="number" 
           value={inputValue} 
@@ -53,15 +40,9 @@ function App() {
         <p>
           Pulsa enviar para una respuesta del backend
         </p>
-      </section>
-
-      <div className="horizontal">
-        <Skills id="skills"/>
-        <SoftSkills/>
       </div>
-
-    </>
+    </div>
   )
 }
 
-export default App
+export default AppOld
