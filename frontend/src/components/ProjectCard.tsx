@@ -1,4 +1,5 @@
 type ProjectCardData = {
+    id : number,
     name: string,
     description: string,
     techs : string[]

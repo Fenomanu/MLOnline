@@ -1,3 +1,4 @@
+import './About.css'
 type AboutProps = {
     id : string;
 }
@@ -7,9 +8,13 @@ function About(props : AboutProps) {
         name: "Manuel Díaz",
         description: "This is the text about my life my bro panacota"
     }
+
     return (
-        <div id={props.id}>
-            <h1>{data.name}</h1>
+        <div id={props.id} className='userData'>
+            <div className='profilePic'>
+                <img src="avatar.jpg" alt="Avatar"></img>
+                <h1 className='name'>{data.name}</h1>
+            </div>
             <p>{data.description}</p>
         </div>
     )

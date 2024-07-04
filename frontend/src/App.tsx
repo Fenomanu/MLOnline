@@ -30,30 +30,17 @@ function App() {
         <li><a href='#skills'>Skills</a></li>
       </Header>
       
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
       <About id="about"/>
 
       <Experience id="experience"/>
 
       <Projects id="projects"/>
-
-      <section hidden className="projects">
-        <h1></h1>
-        <input 
-          type="number" 
-          value={inputValue} 
-          onChange={handleChange}
-          placeholder="Predict..."
-        />
-        <button onClick={() => fetchData(parseFloat(inputValue))}>
-          Enviar
-        </button>
-        <p>
-          {result ? result + "!" : ""}
-        </p>
-        <p>
-          Pulsa enviar para una respuesta del backend
-        </p>
-      </section>
 
       <div className="horizontal">
         <Skills id="skills"/>
