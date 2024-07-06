@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Header from './components/Header'
 import About from './components/About'
 import Experience from './components/Experience'
@@ -9,18 +8,6 @@ import SoftSkills from './components/SoftSkills'
 import Footer from './components/Footer'
 
 function App() {
-  const [result, setResult] = useState(0.0)
-  const [inputValue, setInputValue] = useState("")
-  function fetchData(value:number) {
-    console.log("Result")
-    fetch('https://api.mdiazpastor.com/predict/' + String(value))
-      .then(response => response.json())
-      .then(json => setResult(json))
-      .catch(error => console.error(error));
-  }
-  const handleChange = (e:any) => {
-    setInputValue(e.target.value)
-  };
 
   return (
     <>
