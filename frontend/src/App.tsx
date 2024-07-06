@@ -6,6 +6,7 @@ import './App.css'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import SoftSkills from './components/SoftSkills'
+import Footer from './components/Footer'
 
 function App() {
   const [result, setResult] = useState(0.0)
@@ -30,23 +31,36 @@ function App() {
         <li><a href='#skills'>Skills</a></li>
       </Header>
       
+      {/*<br></br>
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
+      <br></br>*/}
+
+      <span className='br-big'></span>
 
       <About id="about"/>
 
+      <span className='br-small'></span>
+
       <Experience id="experience"/>
+
+      <span className='br-small'></span>
 
       <Projects id="projects"/>
 
+      <span className='br-small'></span>
+      
       <div className="horizontal">
         <Skills id="skills"/>
         <SoftSkills/>
       </div>
 
+      <span className='br-mid'></span>
+
+      <Footer/>
+
+      <span className='br-small'></span>
     </>
   )
 }

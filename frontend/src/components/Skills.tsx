@@ -1,10 +1,12 @@
+import './Skills.css'
+
 type SkillsProps = {
     id : string;
 }
 
 function Skills(props : SkillsProps) {
     return(
-        <section id={props.id}>
+        <section className='skills' id={props.id}>
             <h1>Skills</h1>
             <ul>
                 <li>Skill 1</li>

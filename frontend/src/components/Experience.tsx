@@ -1,3 +1,5 @@
+import './Experience.css'
+
 type ExperienceProps = {
     id : string;
 }
@@ -17,11 +19,11 @@ function Experience({id} : ExperienceProps) {
     ]
 
     return (
-        <section id={id}>
+        <section className='experience' id={id}>
             <h1>Experience</h1>
             <div className="wrapper">
                 {items.map(x => 
-                    <div key={x.id}>
+                    <div className='experience-item' key={x.id}>
                         <h3>{x.name}</h3>
                         <p>{x.description}</p>
                     </div>

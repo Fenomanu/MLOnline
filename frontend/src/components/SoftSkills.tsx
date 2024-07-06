@@ -1,7 +1,9 @@
+import './SoftSkills.css'
+
 function SoftSkills(){
     
     return (
-        <div>
+        <section className='soft-skills'>
             <h1>Soft Skills</h1>
             <ul>
                 <li>Skill 1</li>
@@ -10,7 +12,7 @@ function SoftSkills(){
                 <li>Skill 4</li>
                 <li>Skill 5</li>
             </ul>
-        </div>
+        </section>
     )
 }
 

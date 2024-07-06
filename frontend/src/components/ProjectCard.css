@@ -1,0 +1,19 @@
+.project-card {
+    /*background-color: rgb(228, 122, 122);*/
+    background-color: var(--subsection-color);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.project-card-techs {
+    display: flex;
+}
+
+.project-card-techs-item {
+    border-radius: 5px;
+    background-color: white;
+    min-width: 25px;
+    min-height: 25px;
+    margin-right: 10px;
+}

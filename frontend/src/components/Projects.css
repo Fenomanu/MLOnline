@@ -1,0 +1,6 @@
+.projects {
+    /*background-color: brown;*/
+    background-color: var(--section-color);
+    border-radius: 10px;
+    padding: 20px;
+}

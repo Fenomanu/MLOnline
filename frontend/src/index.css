@@ -16,6 +16,9 @@
   display: flex;
   align-items: stretch;
   justify-content: center;
+
+  --section-color : rgb(67, 67, 67);
+  --subsection-color : rgb(49, 49, 49);
 }
 
 body {
@@ -39,10 +42,15 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin-block: 10px;
+}
+
+h3 {
+  margin-block: 2px;
 }
 
 p {
-  padding-left: 20px;
+  margin-inline: 20px;
 }
 
 /*button {

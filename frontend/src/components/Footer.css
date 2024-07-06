@@ -1,0 +1,25 @@
+.footer {
+    align-self: flex-end;
+}
+
+.hr-with-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hr-with-text::before,
+.hr-with-text::after {
+    content: '';
+    flex: 1;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.1);
+}
+
+.hr-with-text:not(:empty)::before {
+    margin-right: 1em;
+}
+
+.hr-with-text:not(:empty)::after {
+    margin-left: 1em;
+}

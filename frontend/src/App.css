@@ -6,3 +6,18 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+.br-big {
+    display: block; 
+    margin-bottom: 150px;
+}
+
+.br-mid {
+    display: block; 
+    margin-bottom: 80px;
+}
+
+.br-small {
+    display: block; 
+    margin-bottom: 40px;
+}

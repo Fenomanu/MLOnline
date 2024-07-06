@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard"
+import './Projects.css'
 
 type ProjectsProps = {
     id: string;
@@ -21,7 +22,7 @@ function Projects({id} : ProjectsProps){
     ]
 
     return(
-        <div id={id}>
+        <section className='projects' id={id}>
             <h1>Projects</h1>
             <div>
                 {items.map(x => 
@@ -33,7 +34,7 @@ function Projects({id} : ProjectsProps){
                         techs={x.techs}/>
                 )}
             </div>
-        </div>
+        </section>
     )
 }
 

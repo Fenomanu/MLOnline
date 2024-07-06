@@ -1,15 +1,18 @@
+import './ProjectCard.css'
+
 type ProjectCardData = {
     id : number,
     name: string,
     description: string,
     techs : string[]
 }
+
 function ProjectCard(props : ProjectCardData) {
     return (
-        <div>
-            <div>
+        <div className='project-card'>
+            <div className='project-card-techs'>
                 {props.techs.map(x => 
-                    <div>{x}</div>
+                    <div className='project-card-techs-item'>{x}</div>
                 )}
             </div>
             <div>

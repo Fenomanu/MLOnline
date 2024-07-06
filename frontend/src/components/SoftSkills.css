@@ -1,0 +1,7 @@
+.soft-skills {
+    /*background-color: darkmagenta;*/
+    background-color: var(--section-color);
+    padding: 20px;
+    min-width: 40%;
+    border-radius: 10px;
+}
