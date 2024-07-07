@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: rgb(36, 36, 36);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,8 +17,10 @@
   align-items: stretch;
   justify-content: center;
 
+  --back-color : rgb(36, 36, 36);
   --section-color : rgb(67, 67, 67);
   --subsection-color : rgb(49, 49, 49);
+  --text-color : rgb(255, 255, 255);
 }
 
 body {
@@ -27,13 +29,18 @@ body {
   align-items: stretch;
   justify-content: center;
   min-width: 500px;
-  max-width: 600px;
+  max-width: 900px;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    /*color: #213547;*/
     background-color: #ffffff;
+    
+    color: var(--text-color);
+    --section-color : rgb(190, 190, 190);
+    --subsection-color : rgb(174, 174, 174);
+    --text-color : rgb(0, 0, 0);
   }
 }
 
