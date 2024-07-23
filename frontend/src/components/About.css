@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
     /*background-color: darkslategray;*/
     background-color: var(--section-color);
@@ -11,7 +11,10 @@
 
 .profile-pic {
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 50%;
+    min-width: 100px;
+    min-height: 100px;
     height: 15%;
     width: 15%;
 }
@@ -19,13 +22,6 @@
 .profile-info {
     /*background-color: rgb(124, 169, 209);*/
     background-color: var(--subsection-color);
-    padding: 10px;
+    padding: 25px;
     border-radius: 10px;
 }
-
-/*.profilePic {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    display: flex;
-}*/

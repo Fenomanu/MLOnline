@@ -1,26 +1,44 @@
 .header {
     display: flex;
-    justify-content: space-between; /* Esto distribuye los elementos uniformemente */
+    align-items: stretch;
+    justify-content: center; /* Esto distribuye los elementos uniformemente */
     list-style-type: none; /* Elimina los bullets de la lista */
     margin: 0;
     margin-top: 20px;
     padding: 0;
     /*background-color: #333; /* Un color de fondo para mejor visualización */
-    background-color: var(--section-color);
+    
     color: white;
     border-radius: 10px;
 }
 
 .header li {
-    background-color: #6f6f6f; /* Un color de fondo para mejor visualización */
+    background-color: var(--section-color); /* Un color de fondo para mejor visualización */
     padding: 12px 20px; /* Espacio alrededor de los enlaces */
     margin: 10px;
+    min-width: 1%;
     border-radius: 10px;
-    min-width: 15%;
     text-align: center;
 }
 
-.header a {
+.header li:hover {
+    cursor: pointer;
+    background-color: #6f6f6f; /* Un color de fondo para mejor visualización */
+}
+
+.header li:active {
+    background-color: var(--section-color); /* Un color de fondo para mejor visualización */
+}
+
+.header li a {
     color: white; /* Color del texto para los enlaces */
     text-decoration: none; /* Remueve el subrayado de los enlaces */
+}
+
+.header li:hover a {
+    color: var(--text-hover-color);
+}
+
+.header li:active a {
+    color: var(--text-action-color)
 }

@@ -40,6 +40,7 @@ function App() {
       
       <div className="horizontal">
         <Skills id="skills"/>
+        <span className='br-small'></span>
         <SoftSkills/>
       </div>
 

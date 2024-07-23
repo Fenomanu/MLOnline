@@ -4,7 +4,7 @@ function Footer(){
     
     return (
         <section className='footer'>
-            <div className='hr-with-text'>App footer</div>
+            <div className='hr-with-text'>This is the App footer</div>
         </section>
     )
 }

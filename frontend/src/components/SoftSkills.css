@@ -5,3 +5,7 @@
     min-width: 40%;
     border-radius: 10px;
 }
+
+.soft-skills h1 {
+    text-wrap:wrap;
+}
